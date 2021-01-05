@@ -12,6 +12,6 @@ public class AppFilter implements ResourceBasedOverride {
     }
 
     public boolean shouldShowApp(ComponentName app) {
-        return true;
+        return !"com.google.android.apps.wallpaper".equals(app.getPackageName());
     }
 }
